@@ -1,0 +1,56 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "Player Performance & Lineup Construction",
+    description:
+      "Build your lineups using up to date player performance and python. Why use the same tools as everyone else and lose day in and day out.",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "Trends and Analytics",
+    description:
+      "Every data point tells a story and every trend shapes the future. Discover how harnessing these powerful tools can transform your strategy and keep you ahead of the curve.",
+    icon: "bx:bxs-window-alt",
+  },
+ 
+  {
+    title: "Automation by scripting",
+    description:
+      "Leverage optimization techniques, machine learning, and AI to streamline your process, transforming winning strategies into powerful tools.",
+    icon: "bx:bxs-bot",
+  },
+ 
+  
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Teach him to fish, eat for a lifetime 
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Mint Factory provides resources to help you meet your fantasy goals- 
+    whether its winning a large field contest, lineup construction, 
+    answering a question with data analytics, or automating your process, 
+    we can find way to help.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
