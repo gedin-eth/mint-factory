@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: "DraftKings Week 1 Slate Breakdown: Thursday through Monday"
 snippet: "Dive into the numbers and find the perfect play to takedown your NFL contest this weekend"
 image: {
